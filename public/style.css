@@ -1,0 +1,12 @@
+.score {
+    padding-left:1rem;
+}
+
+.player {
+    padding-right: 1rem;
+}
+
+.userRow {
+    display: flex;
+    justify-content: space-between;
+}

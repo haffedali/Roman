@@ -4,10 +4,43 @@
         <meta charset="utf-8" />
         <title> Flappy Bird Clone </title>
         <script type="text/javascript" src="/phaser.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-firestore.js"></script>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="/style.css">
     </head>
 
     <body>
-
+        <div class='sitecontainer'>
+                <div id='gameContainer'></div>
+                <div class="leaderboard list-group">
+                    <li id='0' class='list-group-item userRow'><span class="score">0</span><span class='player'>Haffed</span></li>
+                    <li id='1' class='list-group-item userRow'><span class="score">0</span><span class='player'>Nasser</span></li>
+                    <li id='2' class='list-group-item userRow'><span class="score">0</span><span class='player'>Nu</span></li>
+                    <li id='3' class='list-group-item userRow'><span class="score">0</span><span class='player'>Ahmed</span></li>
+                    <li id='4' class='list-group-item userRow'><span class="score">0</span><span class='player'>Jordan</span></li>
+                    <li id='5' class='list-group-item userRow'><span class="score">0</span><span class='player'>Faye</span></li>
+                    <li id='6' class='list-group-item userRow'><span class="score">0</span><span class='player'>Anisa</span></li>
+                    <li id='7' class='list-group-item userRow'><span class="score">0</span><span class='player'>Ciara</span></li>
+                    <li id='8' class='list-group-item userRow'><span class="score">0</span><span class='player'>Eman</span></li>
+                    <li id='9' class='list-group-item userRow'><span class="score">0</span><span class='player'>Hannah</span></li>
+                </div>
+        </div>
     </body>  
+    <script>
+            // Your web app's Firebase configuration
+            var firebaseConfig = {
+              apiKey: "AIzaSyCLrSRGaNauEa4DMEjmzA-vfZlSAQXIv5A",
+              authDomain: "romanflap.firebaseapp.com",
+              databaseURL: "https://romanflap.firebaseio.com",
+              projectId: "romanflap",
+              storageBucket: "",
+              messagingSenderId: "17304534439",
+              appId: "1:17304534439:web:bec5dad5e1384b0c"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            const db = firebase.firestore();
+          </script>
     <script type="module" src="/start.js"></script>
 </html> 
